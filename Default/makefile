@@ -1,6 +1,12 @@
-CC = g++
+#CC = g++
+UNAME := $(shell uname)
+ifeq ($(UNAME),Darwin)
+	CC = g++=14
+else
+	CC = g++
+endif
 LIBS = 
-CFLAGS =-O2 -g -Wall -c -fmessage-length=0 
+CFLAGS =-O0 -g -Wall -c -fmessage-length=0 
 OPENMP = -fopenmp
 
 RM := rm -rf
@@ -17,7 +23,7 @@ CPP_DEPS := $(patsubst ../%.cpp, ./%.d, $(CPP_SRCS))
 
 
 # All Target
-all: OpenMP
+all: PSO
 
 # Tool invocations
 PSO: $(OBJS) $(USER_OBJS)

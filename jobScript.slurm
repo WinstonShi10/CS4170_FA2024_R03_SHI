@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --ntasks=2 
+#SBATCH --ntasks=12 
 #SBATCH --time=1:00:00
 #SBATCH --mail-type=END,FAIL
 #SBATCH --account=PCS0253
-#SBATCH --job-name=JOB_NAME
+#SBATCH --job-name=Shi_Count_Sort
 
 export OMP_NUM_THREADS=12
 cd $SLURM_SUBMIT_DIR/Default
