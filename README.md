@@ -143,7 +143,7 @@ sacct -j BATCH_ID_NUM
 
 ## Results
 
-```cvs
+```csv
 Threads: 1, Size: 10000, Time: 1.34239
 Threads: 1, Size: 20000, Time: 5.25219
 Threads: 1, Size: 30000, Time: 11.6416
