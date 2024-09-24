@@ -12,17 +12,21 @@ This program will run a sorting function that sorts a vector of numbers in ascen
 ## Lessons Learned
 
 **Key Lessons:**
- * 
- * 
- * 
- * 
- * 
+ * Learned about Loop-Dependent variables that need to be privatized so that is does not effect other programs parallel to it.
+ * Learned to setup a spreadsheet to organize data
+ * Learned when setting parallel for without parameters sets to OMP_NUM_THREADS number of threads
+ * Learned the default scheduling is equivalent to static scheduling with a system-chosen chunk size.
+ * Learned that variables declared outside the parallel region are shared by default
 
 **Code Snippets:**
 
-```bash
+**ACCOUNT NUMBER STAYS THE SAME**
 
+```bash
+#SBATCH --account=PCS0288
 ```
+
+****
 
 ```bash
 
@@ -160,38 +164,43 @@ sacct -j BATCH_ID_NUM
 | 11 | 0.174309 | 0.507949 | 1.11655 | 1.99238 | 3.06189 | 4.38298 | 5.96932 | 7.76392 | 9.80064 | 12.0995 |
 | 12 | 0.163111 | 0.484189 | 1.03802 | 1.80694 | 2.803 | 4.02334 | 5.45815 | 7.12897 | 9.01657 | 11.1274 |
 
-![test](Results/Average Speedup.png)
+**Speedup**
 
-![test](Results/Average Efficiency.png)
+![speedup](Results/Average_Speedup.jpeg)
 
-![test](Results/Average Karp-Flatt.png)
+**Efficiency**
 
+![efficiency](Results/Average_Efficiency.jpeg)
 
+**Karp Flatt**
 
+![karp flatt](Results/Average_Karp-Flatt.jpeg)
 
-
-
-
-
-You must also include a complete performance evaluation within this file including charts, graphs, and tables.
-
-Summarize what you learned during this week of class. 
-Note any particular features, concepts, code, or terms that you believe are important.
-
-Include data along with the calculated Speedup, 
-Efficiency, and Karp-Flatt metric. 
-What do these metrics tell you?
-Provide images/charts for each metric and include them in your repository and README.md. 
+## Results Reflection
 
 
-Were there any loop dependencies in this algorithm?
 
-How much time did you spend on this reflection? 
-How much time did you spending coding? 
-Writing? 
-Testing? 
-Analyzing?
+Was performance gained?
+
+ * 
+
+Were there Loop-Dependencies when in the Count Sort Algorithm?
+
+ * 
 
 
+
+
+
+
+### Final Notes
+
+Time Spent Writing reflection: 2 hours
+ 
+Time spent coding: 1 hour
+
+Time spent testing: 1 hour
+
+Time spent analyzing: 1.5 hours
 
 [TOC]
