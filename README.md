@@ -3,6 +3,8 @@
 
 Completed by Winston Shi
 
+[TOC]
+
 ## Summary
 
 This reflection uses code snippets from class to implement the parallelization of Count Sort. This code will be ran on the Ohio Supercomputing Center (OSC) servers.
@@ -193,5 +195,3 @@ Time spent coding: 1 hour
 Time spent testing: 1 hour
 
 Time spent analyzing: 1.5 hours
-
-[TOC]
