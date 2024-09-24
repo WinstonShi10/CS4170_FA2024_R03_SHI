@@ -160,9 +160,11 @@ sacct -j BATCH_ID_NUM
 | 11 | 0.174309 | 0.507949 | 1.11655 | 1.99238 | 3.06189 | 4.38298 | 5.96932 | 7.76392 | 9.80064 | 12.0995 |
 | 12 | 0.163111 | 0.484189 | 1.03802 | 1.80694 | 2.803 | 4.02334 | 5.45815 | 7.12897 | 9.01657 | 11.1274 |
 
+![test](Results/Average Speedup.png)
 
+![test](Results/Average Efficiency.png)
 
-
+![test](Results/Average Karp-Flatt.png)
 
 
 
