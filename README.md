@@ -26,24 +26,6 @@ This program will run a sorting function that sorts a vector of numbers in ascen
 #SBATCH --account=PCS0288
 ```
 
-****
-
-```bash
-
-```
-
-```bash
-
-```
-
-```bash
-
-```
-
-```bash
-
-```
-
 ## Run Locally
 
 Clone Repository
@@ -178,20 +160,29 @@ sacct -j BATCH_ID_NUM
 
 ## Results Reflection
 
+Thee results wihtin the Results Folder show the evaluations of the 120 Trials for the diferrent combinations of threads (1 to 12) and vector size (10,000 to 100,000). 
 
+The speedup graph shows the average speed of parallel algorithm compared to serial program counterpart. The spedup is a linear line with a dip from 7 to 10 threads. The 100,000 line shows that as vector size n increases, the straighter the line is showing a consistent speedup throughout the number of threads.
+
+Efficiency decreases with as the number of threads increase, though the decrease is very shallow compared to reflection 2. This shows that there is less of a return of investments as you add more cores to the program.
+
+The Karp-Flatt Metric stays relatively flatt except from 7 to 10 cores, this indicated for these cores there an increase of overhead that could scale with the vector problem size. Looking back at these graphs I think it is safe to say this program scales with the problem size.
 
 Was performance gained?
 
- * 
+ * I do not believe so, but it has reached optimum results. According to claude.ai, the best lines for each graph is: 
+
+```
+Here's what these "good lines" might look like in practice:
+
+Speedup: A line close to y = x (linear)
+Efficiency: A horizontal line close to y = 1
+Karp-Flatt: A horizontal line close to y = 0
+```
 
 Were there Loop-Dependencies when in the Count Sort Algorithm?
 
- * 
-
-
-
-
-
+ * Yes, the count variable is dependent on the number searched for.
 
 ### Final Notes
 
